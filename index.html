@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <title>upload page</title>
+ <meta charset="utf-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <link rel="stylesheet" href="ermile.css">
+ <link rel="stylesheet" href="../../static/font-awesome-4.6.3/css/font-awesome.css">
+ <link rel="stylesheet" href="style.css">
+ <link href="prism.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="box rtl">
+  <h1>respons documention</h1>
+  <div id="dsc">
+   <span calss="codes">
+    <p><b>مرحله اول </b>برای استفاده از امکانات رسپانس ابتدا فایل را دانلود کرده و در پورژه خود در انتهای فایل html آخرین خط body قرار دهید.
+    </p>
+    <xmp><script type="text/javascript" src="respons.js" ></script></xmp>
+   </span>
+   <span class="codes">
+    <p><b>مرحله دوم </b>فایل jquery را از<a href="https://jquery.com/download/"> اینجا</a> دانلود کنید و بعد از فایل رسپانس قرار دهید.
+    </p>
+    <xmp><script src="jquery-3.1.1.min.js"></script></xmp>
+   </span>
+  </div>
+ <div class="wrapper">
+
+  <!--  links -->
+<!--    <section id="links">
+    <a href="#Example1" >Example1:simple input check box</a>
+    <a href="#Example1" >Example2:simple input text</a>
+    <a href="#Example2" >Example2:simple check box very fast</a>
+    <a href="#Example3" >Example3:simple check box in slide show</a>
+    <a href="#Example4" >Example4 select and option</a>
+    <a href="#Example5" >Example5 on keyup</a>
+    <a href="#Example6" >Example6 like 7 slider</a>
+    <a href="#Example7" >Example7 like 6 slider</a>
+    <a href="#Example8" >Example8 slider in slow mode </a>
+    <a href="#Example9" >Example9 slider in fast mode </a>
+    <a href="#Example10" >Example10 2step</a>
+   </section> -->
+  <!--  links -->
+
+  <!--  example 1 -->
+   <div class="content row">
+    <div class="sector span6">
+     <input type="checkbox" id="meta_choicemode1" value="multi">
+     <label for="meta_choicemode1">click on me</label>
+     <div class="goal span6" data-response="meta_choicemode1" data-response-hide><span>Hello</span></div>
+    </div>
+    <div class="description span6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti quos error quam, temporibus voluptates quod quidem delectus eum deleniti. Minus a quam nobis deserunt voluptatum exercitationem, sapiente incidunt corporis assumenda?</div>
+   </div>
+  <!-- bottun -->
+<button class="btn btn-3 btn-3e">Button</button>
+<!--     <pre>
+     <xmp>
+       <input type="checkbox" id="meta_choicemode3">
+       <label for="meta_choicemode3">click on me </label>
+       <div class="goal span6" data-response="meta_choicemode3" data-response-hide ><span>Hello</span>
+       </div>
+     </xmp>
+    </pre> -->
+  <!--  example 1 -->
+
+  <!--  example 2 -->
+   <div class="content row">
+    <a href="" name="Example1"></a>
+    <div class="sector span6">
+     <input type="text" id="choicemode2" value="" data-response-realtime placeholder="type some thing here :)">
+    </div>
+    <div class="goal span6" data-response="choicemode2" data-response-hide><span>Hello</span></div>
+   </div>
+    <pre>
+     <xmp>
+       <input type="text" id="meta_choicemode3" data-response-realtime>
+       <div class="goal span6" data-response="choicemode3" data-response-hide ><span>Hello</span>
+       </div>
+     </xmp>
+    </pre>
+  <!--  example 2 -->
+
+  <!--  example 3 -->
+   <div class="content row">
+    <a href="" name="Example1"></a>
+    <div class="sector span6">
+     <input type="number" id="choicemode3" value="" data-response-realtime placeholder="inter a number here">
+    </div>
+    <div class="goal span6" data-response="choicemode3" data-response-hide><span>Hello</span></div>
+   </div>
+    <pre>
+     <xmp>
+       <input type="number" id="meta_choicemode3" data-response-realtime>
+       <div class="goal span6" data-response="choicemode3" data-response-hide ><span>Hello</span>
+       </div>
+     </xmp>
+    </pre>
+  <!--  example 3 -->
+
+  <!--  example 4 -->
+   <div class="content row">
+    <a href="" name="Example1"></a>
+    <div class="sector span6">
+     <input type="radio" id="choicemode4" value="choicemode4" name="choicemode4">
+     <lable for="choicemode4">alfa</lable>
+     <input type="radio" id="choicemode4a"  name="choicemode4">
+     <lable for="choicemode4a">beta</lable>
+    </div>
+    <div class="goal span6" data-response="choicemode4" data-response-where="choicemode4" data-response-hide ><span>Hello</span></div>
+   </div>
+    <pre>
+     <xmp>
+       <input type="number" id="meta_choicemode4" data-response-realtime>
+       <div class="goal span6" data-response="choicemode4" data-response-hide ><span>Hello</span>
+       </div>
+     </xmp>
+    </pre>
+  <!--  example 4 -->
+
+  <!--  example 5 -->
+   <div class="content row">
+    <a href="" name="Example5"></a>
+    <div class="sector span6">
+     <input type="radio" id="choicemode4" value="choicemode4" name="choicemode4">
+     <lable for="choicemode4">alfa</lable>
+     <input type="radio" id="choicemode4a" value="choicemode4a"  name="choicemode4">
+     <lable for="choicemode4a">beta</lable>
+    </div>
+    <div class="goal span3" data-response="choicemode4" data-response-where="choicemode4" data-response-hide ><span>Hello</span></div>
+    <div class="goal span3" data-response="choicemode4a"  data-response-where="choicemode4a" data-response-hide ><span>Hello</span></div>
+   </div>
+    <pre>
+     <xmp>
+       <input type="number" id="meta_choicemode4" data-response-realtime>
+       <div class="goal span6" data-response="choicemode4" data-response-hide ><span>Hello</span>
+       </div>
+     </xmp>
+    </pre>
+  <!--  example 5 -->
+
+    <!--  example 2 -->
+   <div class="content row">
+    <a href="" name="Example2"></a>
+    <div class="sector span6">
+     <input type="checkbox" id="meta_choicemode2" value="multi">
+     <label for="meta_choicemode2">2click on me </label>
+    </div>
+    <div class="goal span6" data-response="meta_choicemode2" data-response-hide data-response-timing="fast"><span>Hello</span>
+    </div>
+   </div>
+   <pre>
+    <xmp>
+     <input type="checkbox" id="meta_choicemode2">
+     <label for="meta_choicemode2">click on me </label>
+     <div class="goal span6" data-response="meta_choicemode3" data-response-timing="fast"><span>Hello</span>
+     </div>
+    </xmp>
+   </pre>
+  <!--  example 2 -->
+
+  <!--  example 3 -->
+   <div class="content row">
+    <a href="" name="Example3"></a>
+    <div class="sector span6">
+     <input type="checkbox" id="meta_choicemode3" value="multi">
+     <label for="meta_choicemode3">3click on me </label>
+    </div>
+    <div class="goal span6" data-response="meta_choicemode3" data-response-hide data-response-timing="slow"><span>Hello</span>
+    </div>
+   </div>
+   <pre>
+    <xmp>
+     <input type="checkbox" id="meta_choicemode3">
+     <label for="meta_choicemode3">click on me </label>
+     <div class="goal span6" data-response="meta_choicemode3" data-response-hide data-response-timing="slow"><span>Hello</span>
+     </div>
+    </xmp>
+   </pre>
+  <!--  example 3 -->
+
+  <!--  example 4 -->
+<!--    <div class="content row">
+    <a href="" name="Example4"></a>
+    <div class="sector span6">
+     <input type="checkbox" id="meta_choicemode4" value="multi">
+     <label for="meta_choicemode4">4click on me </label>
+    </div>
+     <div class="goal span6" >
+      <select name="" id="" data-response="meta_choicemode4" data-response-hide>
+       <option value="">111</option>
+       <option value="">222</option>
+       <option value="">333</option>
+       <option value="">444</option>
+       <option value="">555</option>
+      </select>
+     </div>
+   </div>
+   <pre>
+    <xmp>
+     <input type="checkbox" id="meta_choicemode4">
+     <label for="meta_choicemode4">click on me </label>
+     <div class="goal span6" data-response="meta_choicemode4" data-response-hide "><span>Hello</span>
+     </div>
+    </xmp>
+   </pre> -->
+  <!--  example 4 -->
+
+  <!--  example 5 -->‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍
+   <div class="content row">
+    <a href="#" name="Example5"></a>
+    <div class="sector span6">
+     <input type="text" data-response="choicemode5" data-response-realtime >
+    </div>
+     <div class="goal span6" >
+      <div data-response="choicemode5" data-response-realtime  data-response-hide></div>
+     </div>
+   </div>
+   <pre>
+    <xmp>
+     <input type="checkbox" id="meta_choicemode5">
+     <label for="choicemode5">5click on me </label>
+     <div class="goal span6" data-response="choicemode5" data-response-realtime "><span>Hello</span>
+     </div>
+    </xmp>
+   </pre>
+<!--  example 5 -->
+
+<!--  example 6 -->
+   <div class="content row">
+    <a href="" name="Example6"></a>
+    <div class="sector span6">
+     <input type="checkbox" id="meta_choicemode6" value="multi">
+     <label for="meta_choicemode6">6click on me </label>
+    </div>
+    <div class="goal span6 E6" data-response="meta_choicemode6" data-response-hide data-response-effect="slide"><span>Hello</span>
+    </div>
+   </div>
+   <pre>
+    <xmp>
+     <input type="checkbox" id="meta_choicemode6">
+     <label for="meta_choicemode6">click on me </label>
+     <div class="goal span6" data-response="meta_choicemode6" data-response-hide data-response-effect="slide"><span>Hello</span>
+     </div>
+    </xmp>
+   </pre>
+  <!--  example 6 -->
+
+<!--  example 7 -->
+   <div class="content row">
+    <a href="" name="Example7"></a>
+    <div class="sector span6">
+     <input type="checkbox" id="meta_choicemode7" value="multi">
+     <label for="meta_choicemode7">7click on me </label>
+    </div>
+    <div class="goal span6 E7" data-response="meta_choicemode7" data-response-hide data-response-effect="slide"><span>Hello</span>
+    </div>
+   </div>
+   <pre>
+    <xmp>
+     <input type="checkbox" id="meta_choicemode7">
+     <label for="meta_choicemode7">click on me </label>
+     <div class="goal span6" data-response="meta_choicemode7" data-response-hide data-response-effect="slide"><span>Hello</span>
+     </div>
+    </xmp>
+   </pre>
+  <!--  example 7 -->
+
+  <!--  example 8 -->
+   <div class="content row">
+    <a href="" name="Example8"></a>
+    <div class="sector span6">
+     <input type="checkbox" id="meta_choicemode8" value="multi">
+     <label for="meta_choicemode8">8click on me </label>
+    </div>
+    <div class="goal span6 E8" data-response="meta_choicemode8" data-response-hide data-response-effect="slide" timing="fast"><span>Hello</span>
+    </div>
+   </div>
+   <pre>
+    <xmp>
+     <input type="checkbox" id="meta_choicemode8">
+     <label for="meta_choicemode8">click on me </label>
+     <div class="goal span6" data-response="meta_choicemode8" data-response-hide data-response-effect="slide" timing="fast"><span>Hello</span>
+     </div>
+    </xmp>
+   </pre>
+<!--  example 8 -->
+
+<!--  example 9 -->
+   <div class="content row">
+    <a href="" name="Example9"></a>
+    <div class="sector span6">
+     <input type="checkbox" id="meta_choicemode9" value="multi">
+     <label for="meta_choicemode9">9click on me </label>
+    </div>
+    <div class="goal span6 E9" data-response="meta_choicemode9" data-response-hide data-response-effect="slide" timing="slow"><span>Hello</span>
+    </div>
+   </div>
+   <pre>
+    <xmp>
+     <input type="checkbox" id="meta_choicemode9">
+     <label for="meta_choicemode9">click on me </label>
+     <div class="goal span6" data-response="meta_choicemode9" data-response-hide data-response-effect="slide" timing="slow"><span>Hello</span>
+     </div>
+    </xmp>
+   </pre>
+<!--  example 9 -->
+
+<!--  example 10 -->
+   <div class="content row">
+    <a href="" name="Example10"></a>
+    <div class="sector span4">
+     <input type="checkbox" id="choicemode10" value="multi">
+     <label for="choicemode10">10click on me </label>
+    </div>
+      <div  class="span4" data-response="choicemode10"  data-response-hide  >
+          <input type="text" class="input" id="choice10" name="" value="" data-response-realtime >
+        <!-- <label for="choice10">hello </label> -->
+        </div>
+    <div class="goal span4" data-response="choice10" data-response-hide>Hello2</div>
+    </div>
+   <pre>
+    <xmp>
+     <input type="checkbox" id="meta_choicemode10">
+     <label for="meta_choicemode10">click on me </label>
+     <div class="goal span10" data-response="meta_choicemode10" data-response-hide data-response-effect="slide"><span>Hello</span>
+     </div>
+    </xmp>
+   </pre>
+ <!--  example 10 -->
+
+ </div>
+</div>
+  <script src="prism.js"></script>
+  <script src="jquery-3.1.1.min.js"></script>
+  <script type="text/javascript" src="data-response.js"></script>
+</body>
