@@ -9,6 +9,7 @@
  <link rel="stylesheet" href="../../static/font-awesome-4.6.3/css/font-awesome.css">
  <link rel="stylesheet" href="style.css">
  <link href="prism.css" rel="stylesheet">
+ <link rel="stylesheet" href="styles/sdefault.css">
 </head>
 
 <body>
@@ -18,12 +19,12 @@
    <span calss="codes">
     <p><b>مرحله اول </b>برای استفاده از امکانات رسپانس ابتدا فایل را دانلود کرده و در پورژه خود در انتهای فایل html آخرین خط body قرار دهید.
     </p>
-    <xmp><script type="text/javascript" src="respons.js" ></script></xmp>
+    <pre><code class="javascript">&#60;script type="text/javascript" src="respons.js" &#62;&#60;/script&#62;</code></pre>
    </span>
    <span class="codes">
     <p><b>مرحله دوم </b>فایل jquery را از<a href="https://jquery.com/download/"> اینجا</a> دانلود کنید و بعد از فایل رسپانس قرار دهید.
     </p>
-    <xmp><script src="jquery-3.1.1.min.js"></script></xmp>
+    <pre><code class="javascript">&#60;script src="jquery-3.1.1.min.js"&#62;&#60;/script&#62;</code></pre>
    </span>
   </div>
  <div class="wrapper">
@@ -49,20 +50,24 @@
     <div class="sector span6">
      <input type="checkbox" id="meta_choicemode1" value="multi">
      <label for="meta_choicemode1">click on me</label>
-     <div class="goal span6" data-response="meta_choicemode1" data-response-hide><span>Hello</span></div>
     </div>
-    <div class="description span6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti quos error quam, temporibus voluptates quod quidem delectus eum deleniti. Minus a quam nobis deserunt voluptatum exercitationem, sapiente incidunt corporis assumenda?</div>
+    <div class="goal span6" data-response="meta_choicemode1" data-response-hide><span>Hello</span></div>
    </div>
-  <!-- bottun -->
-<button class="btn btn-3 btn-3e">Button</button>
-<!--     <pre>
-     <xmp>
-       <input type="checkbox" id="meta_choicemode3">
-       <label for="meta_choicemode3">click on me </label>
-       <div class="goal span6" data-response="meta_choicemode3" data-response-hide ><span>Hello</span>
-       </div>
-     </xmp>
-    </pre> -->
+    <div class="description">
+     <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit.  Corruptiquos error quam, temporibus
+      voluptates quod quidem delectus eum deleniti. Minus a quam nobis deserunt voluptatum  exercitationem, sapiente incidunt corporis assumenda?
+     </p>
+    <button class="btn btn-3 btn-3e span12" id="buttton1">show codes</button>
+    <pre data-response="buttton1" data-respons-hide>
+     <code class="html nohighlight">
+       &#60;input type="checkbox" id="meta_choicemode3"&#62;
+       &#60;label for="meta_choicemode3">click on me&#60;/label&#62;
+       &#60;div class="goal span6" data-response="meta_choicemode3" data-response-hide>Hello
+       &#60;/div&#62;
+     </code>
+    </pre>
+    </div>
   <!--  example 1 -->
 
   <!--  example 2 -->
@@ -335,4 +340,6 @@
   <script src="prism.js"></script>
   <script src="jquery-3.1.1.min.js"></script>
   <script type="text/javascript" src="data-response.js"></script>
+  <script src="highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
 </body>
