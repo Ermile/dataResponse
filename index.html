@@ -46,6 +46,7 @@
   <!--  links -->
 
   <!--  example 1 -->
+  <div class="contain">
    <div class="content row">
     <div class="sector span6">
      <input type="checkbox" id="meta_choicemode1" value="multi">
@@ -53,21 +54,25 @@
     </div>
     <div class="goal span6" data-response="meta_choicemode1" data-response-hide><span>Hello</span></div>
    </div>
-    <div class="description">
-     <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit.  Corruptiquos error quam, temporibus
-      voluptates quod quidem delectus eum deleniti. Minus a quam nobis deserunt voluptatum  exercitationem, sapiente incidunt corporis assumenda?
-     </p>
-    <button class="btn btn-3 btn-3e span12" id="buttton1">show codes</button>
-    <pre data-response="buttton1" data-respons-hide>
-     <code class="html nohighlight">
-       &#60;input type="checkbox" id="meta_choicemode3"&#62;
-       &#60;label for="meta_choicemode3">click on me&#60;/label&#62;
-       &#60;div class="goal span6" data-response="meta_choicemode3" data-response-hide>Hello
-       &#60;/div&#62;
-     </code>
-    </pre>
+      <p>
+       Lorem ipsum dolor sit amet, consectetur adipisicing elit.  Corruptiquos error quam, temporibus
+       voluptates quod quidem delectus eum deleniti. Minus a quam nobis deserunt voluptatum  exercitationem, sapiente incidunt corporis assumenda?
+      </p>
+    <div class="partition">
+      <input type="checkbox" value="" id="button1">
+      <label for="button1">
+       <span class="btn btn-3 btn-3e">show codes</span>
+      </label>
+     <pre data-response-hide data-response="button1" data-response-effect="slide">
+      <code class="html nohighlight">
+        &#60;input type="checkbox" id="meta_choicemode3"&#62;
+        &#60;label for="meta_choicemode3">click on me&#60;/label&#62;
+        &#60;div class="goal span6" data-response="meta_choicemode3" data-response-hide>Hello
+        &#60;/div&#62;
+      </code>
+     </pre>
     </div>
+  </div>
   <!--  example 1 -->
 
   <!--  example 2 -->
