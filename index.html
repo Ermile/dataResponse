@@ -13,66 +13,58 @@
 </head>
 
 <body>
-<div class="box rtl">
-  <h1>respons documention</h1>
-  <div id="dsc">
-   <span calss="codes">
-    <p><b>مرحله اول </b>برای استفاده از امکانات رسپانس ابتدا فایل را دانلود کرده و در پورژه خود در انتهای فایل html آخرین خط body قرار دهید.
-    </p>
-    <pre><code class="javascript">&#60;script type="text/javascript" src="respons.js" &#62;&#60;/script&#62;</code></pre>
-   </span>
-   <span class="codes">
-    <p><b>مرحله دوم </b>فایل jquery را از<a href="https://jquery.com/download/"> اینجا</a> دانلود کنید و بعد از فایل رسپانس قرار دهید.
-    </p>
-    <pre><code class="javascript">&#60;script src="jquery-3.1.1.min.js"&#62;&#60;/script&#62;</code></pre>
-   </span>
-  </div>
- <div class="wrapper">
-
-  <!--  links -->
-<!--    <section id="links">
-    <a href="#Example1" >Example1:simple input check box</a>
-    <a href="#Example1" >Example2:simple input text</a>
-    <a href="#Example2" >Example2:simple check box very fast</a>
-    <a href="#Example3" >Example3:simple check box in slide show</a>
-    <a href="#Example4" >Example4 select and option</a>
-    <a href="#Example5" >Example5 on keyup</a>
-    <a href="#Example6" >Example6 like 7 slider</a>
-    <a href="#Example7" >Example7 like 6 slider</a>
-    <a href="#Example8" >Example8 slider in slow mode </a>
-    <a href="#Example9" >Example9 slider in fast mode </a>
-    <a href="#Example10" >Example10 2step</a>
-   </section> -->
-  <!--  links -->
-
+  <!--  header -->
+<div class="box rtl row">
+<!--  links -->
+ <div class="menu span2">
+  <ul>
+   <li><a href="#Example1" >Example1:simple input check box</a></li>
+   <li><a href="#Example1" >Example2:simple input text</a></li>
+   <li><a href="#Example2" >Example2:simple check box very fast</a></li>
+   <li><a href="#Example3" >Example3:simple check box in slide show</a></li>
+   <li><a href="#Example4" >Example4 select and option</a></li>
+   <li><a href="#Example5" >Example5 on keyup</a></li>
+   <li><a href="#Example6" >Example6 like 7 slider</a></li>
+   <li><a href="#Example7" >Example7 like 6 slider</a></li>
+   <li><a href="#Example8" >Example8 slider in slow mode </a></li>
+   <li><a href="#Example9" >Example9 slider in fast mode </a></li>
+   <li><a href="#Example10">Example10 2step</a></li>
+  </ul>
+ </div>
+ <div class="span10 main">
+ <h1>respons documention</h1>
+ <!--  description -->
+ <div id="dscription">
+  <p><b>مرحله اول </b>برای استفاده از امکانات رسپانس ابتدا فایل را دانلود کرده و در پورژه خود .
+  <p><b>مرحله دوم </b>فایل jquery را از<a href="https://jquery.com/download/"> اینجا</a> دانلود کنید و این دو خط را در انتهای فایل html آخرین خط body قرار دهید.
+  </p>
+  <pre><code class="javascript">  &#60;script type="text/javascript" src="respons.js"&#62;&#60;/script&#62;
+  &#60;script src="jquery-3.1.1.min.js"&#62;&#60;/script&#62;</code></pre>
+ </div>
   <!--  example 1 -->
-  <div class="contain">
-   <div class="content row">
-    <div class="sector span6">
+  <div class="contain row">
+   <div class="content span4">
+      <h3>checkbox</h3>
+      <p>
+       مثال اول/ inputs /:ساخت یک checkbox ساده که بعد از کلیک بر روی input یک باکس ظاهر میشود.
+      </p>
+   </div>
+    <div class="sector span8">
      <input type="checkbox" id="meta_choicemode1" value="multi">
      <label for="meta_choicemode1">click on me</label>
-    </div>
-    <div class="goal span6" data-response="meta_choicemode1" data-response-hide><span>Hello</span></div>
-   </div>
-      <p>
-       Lorem ipsum dolor sit amet, consectetur adipisicing elit.  Corruptiquos error quam, temporibus
-       voluptates quod quidem delectus eum deleniti. Minus a quam nobis deserunt voluptatum  exercitationem, sapiente incidunt corporis assumenda?
-      </p>
-    <div class="partition">
-      <input type="checkbox" value="" id="button1">
-      <label for="button1">
-       <span class="btn btn-3 btn-3e">show codes</span>
-      </label>
-     <pre data-response-hide data-response="button1" data-response-effect="slide">
-      <code class="html nohighlight">
-        &#60;input type="checkbox" id="meta_choicemode3"&#62;
-        &#60;label for="meta_choicemode3">click on me&#60;/label&#62;
-        &#60;div class="goal span6" data-response="meta_choicemode3" data-response-hide>Hello
-        &#60;/div&#62;
-      </code>
-     </pre>
+     <div class="goal span" data-response="meta_choicemode1" data-response-hide><span>Hello</span></div>
     </div>
   </div>
+    <div class="partition">
+      <input type="checkbox" value="" id="button1">
+      <label for="button1" id="button">
+       <span class="btn btn-3 btn-3e">codes</span>
+      </label>
+      <pre data-response-hide data-response="button1" data-response-effect="slide"><code class="html nohighlight">
+        &#60;input type="checkbox" id="meta_choicemode3"&#62;
+        &#60;label for="meta_choicemode3">click on me&#60;/label&#62;
+        &#60;div class="goal span6" data-response="meta_choicemode3" data-response-hide>Hello&#60;/div&#62;</code></pre>
+    </div>
   <!--  example 1 -->
 
   <!--  example 2 -->
@@ -340,6 +332,7 @@
    </pre>
  <!--  example 10 -->
 
+ <!-- </div> -->
  </div>
 </div>
   <script src="prism.js"></script>
