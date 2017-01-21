@@ -6,7 +6,7 @@
  <meta charset="utf-8">
  <meta http-equiv="X-UA-Compatible" content="IE=edge">
  <link rel="stylesheet" href="ermile.css">
- <link rel="stylesheet" href="../../static/font-awesome-4.6.3/css/font-awesome.css">
+ <link rel="stylesheet" href="https://ermile.com/static/css/font-awesome.min.css">
  <link rel="stylesheet" href="style.css">
  <link href="prism.css" rel="stylesheet">
  <link rel="stylesheet" href="styles/sdefault.css">
@@ -32,9 +32,9 @@
   </ul>
  </div>
  <div class="span10 main">
- <h1>respons documention</h1>
- <!--  description -->
- <div id="dscription">
+  <h1>respons documention</h1>
+  <!--  description -->
+  <div id="dscription">
   <p><b>مرحله اول </b>برای استفاده از امکانات رسپانس ابتدا فایل را دانلود کرده و در پورژه خود .
   <p><b>مرحله دوم </b>فایل jquery را از<a href="https://jquery.com/download/"> اینجا</a> دانلود کنید و این دو خط را در انتهای فایل html آخرین خط body قرار دهید.
   </p>
@@ -42,29 +42,32 @@
   &#60;script src="jquery-3.1.1.min.js"&#62;&#60;/script&#62;</code></pre>
  </div>
   <!--  example 1 -->
+  <h3>checkbox</h3>
   <div class="contain row">
-   <div class="content span4">
-      <h3>checkbox</h3>
-      <p>
-       مثال اول/ inputs /:ساخت یک checkbox ساده که بعد از کلیک بر روی input یک باکس ظاهر میشود.
-      </p>
+   <div class="sector">
+    <div class="replace">
+     <div class="goal" data-response="meta_choicemode1" data-response-hide><span>Hello</span></div>
+    </div>
+    <div class="request">
+     <section>
+      <input type="checkbox" id="meta_choicemode1" value="multi">
+      <label for="meta_choicemode1">click on me</label>
+     </section>
+    </div>
    </div>
-    <div class="sector span8">
-     <input type="checkbox" id="meta_choicemode1" value="multi">
-     <label for="meta_choicemode1">click on me</label>
-     <div class="goal span" data-response="meta_choicemode1" data-response-hide><span>Hello</span></div>
+   <p>
+    مثال اول/ inputs /:ساخت یک checkbox ساده که بعد از کلیک بر روی checkbox یک باکس ظاهر میشود.
+   </p>
+    <div class="partition">
+     <input type="checkbox" value="" id="button1">
+     <label for="button1" id="button">
+      <span class="btn btn-3 btn-3e">codes</span>
+     </label>
+     <pre data-response-hide data-response="button1" data-response-effect="slide"><code class="html nohighlight">     &#60;input type="checkbox" id="meta_choicemode3"&#62;
+     &#60;label for="meta_choicemode3">click on me&#60;/label&#62;
+     &#60;div class="goal span6" data-response="meta_choicemode3" data-response-hide>Hello&#60;/div&#62;</code></pre>
     </div>
   </div>
-    <div class="partition">
-      <input type="checkbox" value="" id="button1">
-      <label for="button1" id="button">
-       <span class="btn btn-3 btn-3e">codes</span>
-      </label>
-      <pre data-response-hide data-response="button1" data-response-effect="slide"><code class="html nohighlight">
-        &#60;input type="checkbox" id="meta_choicemode3"&#62;
-        &#60;label for="meta_choicemode3">click on me&#60;/label&#62;
-        &#60;div class="goal span6" data-response="meta_choicemode3" data-response-hide>Hello&#60;/div&#62;</code></pre>
-    </div>
   <!--  example 1 -->
 
   <!--  example 2 -->
