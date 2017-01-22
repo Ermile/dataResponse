@@ -25,8 +25,57 @@ code{margin: 0;}
 .request{display: block;}
 .request section{padding:.5em;text-align: center;}
 /*checkbox*/
-input[type = "checkbox"] + label{display: inline-block;font-size: 2em;padding: 0 .5em;vertical-align:middle;}
-input[type = "checkbox"]{width: 20px;height: 20px;display: inline-block;vertical-align: middle;}
+input[type = "checkbox"]{width: 0}
+.request section{width: 20px;}
+
+
+.check{
+  width: 20px;
+  height: 21px;
+  position: relative;
+  display: inline-block;
+  border: #eee solid 2px;
+  border-radius: 4px;
+}
+
+input[type = "checkbox"]+label::before{
+   width: 100%;
+   height: 100%;
+   display: none;
+   /*visibility: hidden;*/
+   position: absolute;
+   border-radius: 4px;
+   top: 0;
+   left: 0;
+   font-size: 1.5em;
+   font-weight: bolder;
+   transition: .3s;
+   }
+
+   /*.check:checked .ckeck + label{display: initial;}*/
+
+/*   input[type = "checkbox"]+label::before{
+   border: #eee solid 2px;
+   content: " ";
+   width: 100%;
+   display: inline-block;
+   }
+*/
+input[type = "checkbox"] + label:hover{box-shadow: 0 0 1px 1px #172C73;}
+input[type = "checkbox"] + label:hover .check{border:none}
+
+input[type = "checkbox"]::focuse{}
+input[type = "checkbox"] + label:checked{visibility: visible;}
+
+
+
+
+
+
+
+
+
+
 
 /*section{border-top: 1px solid #eee;}*/
 /*section a , h3 a{display: block;padding:1em;width: 100%;text-align: left;font-size:2em;}*/
@@ -34,7 +83,7 @@ span p{font-size: 1.6em;margin:1em 0;}
 .E6 span{padding: .5em 1em;}
 .input[type = "text"]{width: 200px;border-radius: 5px;padding: 1em;}
 /*button*/
-.btn {width: 30%;font-size: .8em;text-align: center;border: none;;cursor: pointer;text-transform: uppercase;letter-spacing: 1px;font-weight: 700;position: relative;}
+.btn {width: 30%;font-size: .8em;text-align: center;border: none;cursor: pointer;text-transform: uppercase;letter-spacing: 1px;font-weight: 700;position: relative;}
 .btn:after {content: '';position: absolute;z-index: -1;-webkit-transition: all 0.3s;-moz-transition: all 0.3s;transition: all 0.3s;}
 /* Button 3e */
 .btn-3e {padding:15px 110px 15px 85px;overflow: hidden;}
@@ -49,3 +98,7 @@ span p{font-size: 1.6em;margin:1em 0;}
 .hljs{display:block;overflow-x:auto;padding:1em;color:#383a42;background: rgba(232, 229, 229, 0.58);border: 1px solid #bdbaba;}
 #button1{display: none;}
 #button{width: 100%;}
+
+
+
+
