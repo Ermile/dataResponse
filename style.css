@@ -18,27 +18,24 @@ code{background: rgba(220, 215, 215, 0.27);width: 70%;margin: 1em auto;display:b
 /*goal*/
 .goal{text-align: center;font-size: 1.4em;display:block;width: 100%;min-height: 125px}
 .goal span{display:inline-block;vertical-align:middle;padding: 1em;background: #eee;margin: 3em;border-radius: 5px;}
-/*replace*/
+/*replace_box*/
 .replace_box{min-height: 125px;width: 100%;display: block;background-color:#f7f7f7;position: relative;}
 .request{display: block;}
-.goal+section{/*padding:.5em;text-align: center;*/position: absolute;bottom: 0;left: 0;}
-/*.goal+section{}*/
-
 /*checkbox*/
-input[type = "checkbox"]{width: 0}
 .check{width: 100%;display: inline-block;}
-input[type="checkbox"] + label{width: 20px;height: 21px;position: relative;display: inline-block;border: #eee solid 2px;border-radius: 4px;vertical-align: middle;margin: 0 .4em;}
+.check input[type="checkbox"]{width: 0}
+.check input[type="checkbox"]+label{width: 20px;height: 21px;position: relative;display: inline-block;border: #eee solid 2px;border-radius: 4px;vertical-align: middle;margin: 0 .4em;}
+.check input[type="checkbox"]:checked+label::before,.check input[type="checkbox"]:checked+label::after{opacity: 1;}
+.check input[type="checkbox"]:hover+label{border:2px solid #00667a;cursor:pointer;}
+.check input[type="checkbox"]:focuse+label,.check input[type="checkbox"]:focuse+label{border:2px solid #00667a;}
 label{cursor: pointer;display: inline-block;vertical-align: middle;font-size:1.3em;}
 label:before{width: 10px;height: 2px;background-color: #00667a;border: 1px #00667a solid;transform: rotate(40deg);content:"";position: absolute;border-radius: 4px;top: 8px;left: 0px;font-size: 1.5em;font-weight: bolder;transition: .3s;opacity: 0;}
 label:after{opacity: 0;width: 20px;height: 2px;background-color: #00667a;border: 1px #00667a solid;transform: rotate(-50deg);content:"";position: absolute;border-radius: 4px;top: 3px;left: 5px;font-size: 1.5em;font-weight: bolder;transition: .3s;}
-input[type="checkbox"]:checked+label::before,input[type="checkbox"]:checked+label::after{opacity: 1;}
-input[type="checkbox"]:hover+label{border:2px solid #00667a;cursor:pointer;}
-input[type="checkbox"]:focuse+label,input[type="checkbox"]:focuse+label{border:2px solid #00667a;}
 /*input*/
 input[type="text"]{display: inline-block;border: 1px solid #eee;padding: 1em;outline: 0;}
 input:focuse{border: 1px solid red;}
-/*input[type="text"]::cheng{border: 1px solid red;}*/
-/*.input[type = "text"]{width: 200px;border-radius: 5px;padding: 1em;}*/
+/*.check input[type="text"]::cheng{border: 1px solid red;}*/
+/*..check input[type = "text"]{width: 200px;border-radius: 5px;padding: 1em;}*/
 
 span p{font-size: 1.6em;margin:1em 0;}
 .E6 span{padding: .5em 1em;}
