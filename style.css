@@ -6,7 +6,7 @@ h3{color: #2d91a5;font-weight: bolder; margin:0;padding: .4em;width: 10em;text-a
 .menu li{display: block;text-align: right;padding: 1em;font-size: 1.2em;color: #2d91a5;border-bottom: 1px solid #246673;}
 pre{font-size: 1.8em;background-color: transparent;padding:0;font-size: 1.8em;background-color: transparent;margin: 0 auto;max-width: 100%;}
 code{background: rgba(220, 215, 215, 0.27);width: 100%;margin: 0em auto;display:block;}
-#dscription p{margin-bottom: 0;}
+#dscription p{margin-bottom: 0;text-align:left;}
 .main{padding: 2em;}
 .content{color: #111;text-align: right;font-size: .9em;}
 .content h3{text-align: left;padding: 1em 0em 0 1em}

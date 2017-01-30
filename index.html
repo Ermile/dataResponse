@@ -11,13 +11,13 @@
  <link rel="stylesheet" href="styles/sdefault.css">
  <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="ltr">
   <!--  header -->
 <div class="box rtl row">
 <!--  links -->
  <div class="menu span2">
   <ul>
-   <li><a href="#Example1" >Example1:simple input check box</a></li>
+   <li><a href="#example1" id="example1">Simple check box</a></li>
 <!--    <li><a href="#Example1" >Example2:simple input text</a></li>
    <li><a href="#Example2" >Example2:simple check box very fast</a></li>
    <li><a href="#Example3" >Example3:simple check box in slide show</a></li>
@@ -34,13 +34,14 @@
   <h1>respons documention</h1>
   <!--  description -->
   <div id="dscription">
-  <p><b>مرحله اول </b>برای استفاده از امکانات رسپانس ابتدا فایل را دانلود کرده و در پورژه خود .
-  <p><b>مرحله دوم </b>فایل jquery را از<a href="https://jquery.com/download/"> اینجا</a> دانلود کنید و این دو خط را در انتهای فایل html آخرین خط body قرار دهید.
+  <p><b>first step:</b>download respons.js and put it on your project</p>
+  <p><b>second step:</b>download <a href="https://jquery.com/download/">jquery</a> and put it on your HTML last line
   </p>
   <pre><code class="javascript">  &#60;script type="text/javascript" src="respons.js"&#62;&#60;/script&#62;
   &#60;script src="jquery-3.1.1.min.js"&#62;&#60;/script&#62;</code></pre>
  </div>
   <!--  example 1 -->
+  <a href="#example1" id="example1"></a>
   <h3>checkbox</h3>
   <div class="Example">
    <div class="sector row">
@@ -57,7 +58,7 @@
      </div>
     </div>
     <div class="request span8">
-     <p>مثال اول/ inputs /:ساخت یک checkbox ساده که بعد از کلیک بر روی checkbox یک باکس ظاهر میشود.</p>
+     <p>How to show/hide an element on checkbox checked</p>
      <input type="checkbox" value="" id="button1">
      <label for="button1" id="button">
      <span class="btn btn-3 btn-3e">codes</span>
@@ -65,7 +66,7 @@
     </div>
    </div>
    <div class="code">
-    <pre data-response-hide data-response="button1" data-response-effect="slide"><code class="html nohighlight">   &#60;input type="checkbox" id="meta_choicemode3"&#62;
+    <pre data-response-hide data-response="button1" data-response-effect="slide"><code class="html nohighlight">    &#60;input type="checkbox" id="meta_choicemode3"&#62;
     &#60;label for="meta_choicemode3">click on me&#60;/label&#62;
     &#60;div class="goal span6" data-response="meta_choicemode3" data-response-hide>Hello&#60;/div&#62;</code></pre>
    </div>
