@@ -45,14 +45,14 @@
   <h3>checkbox</h3>
   <div class="Example">
    <div class="sector row">
-    <div class="request span8">
+    <div class="request span7">
      <p>How to show/hide an element on checkbox checked</p>
      <input type="checkbox" value="" id="button1">
      <label for="button1" id="button">
      <span class="btn btn-3 btn-3e">codes</span>
      </label>
     </div>
-    <div class="replace_box span4">
+    <div class="replace_box span5">
      <div class="row">
       <div class="goal span6"><span data-response="meta_choicemode1" data-response-hide >Hello</span></div>
       <div class="span6">
@@ -73,76 +73,37 @@
   </div>
   <!--  example 1 -->
   <!--  example 2 -->
-   <div class="content row">
-    <a href="" name="Example1"></a>
-    <div class="sector">
-
+  <a href="#example2" id="example2"></a>
+  <h3>input</h3>
+  <div class="Example">
+   <div class="sector row">
+    <div class="request span7">
+     <p>How to show/hide an element on input keyup</p>
+     <input type="checkbox" value="" id="button2">
+     <label for="button2" id="button">
+     <span class="btn btn-3 btn-3e">codes</span>
+     </label>
     </div>
-    <div class="goal span6" data-response="choicemode2" data-response-hide><span>Hello</span></div>
-   </div>
-    <pre>
-     <xmp>
-       <input type="text" id="meta_choicemode3" data-response-realtime>
-       <div class="goal span6" data-response="choicemode3" data-response-hide ><span>Hello</span>
+    <div class="replace_box span5">
+     <div class="row">
+      <div class="goal span6"><span data-response="choicemode2" data-respons-hide data-respons-realtime >Hello</span></div>
+      <div class="span6">
+        <span class="check">
+         <input type="text" id="choicemode2" value="">
+         <!-- <label for="choicemode2"></label> -->
+         <!-- <label for="choicemode2">check me</label> -->
+        </span>
        </div>
-     </xmp>
-    </pre>
-  <!--  example 2 -->
-  <!--  example 3 -->
-   <div class="content row">
-    <a href="" name="Example1"></a>
-    <div class="sector span6">
-     <input type="number" id="choicemode3" value="" data-response-realtime placeholder="inter a number here">
+     </div>
     </div>
-    <div class="goal span6" data-response="choicemode3" data-response-hide><span>Hello</span></div>
    </div>
-    <pre>
-     <xmp>
-       <input type="number" id="meta_choicemode3" data-response-realtime>
-       <div class="goal span6" data-response="choicemode3" data-response-hide ><span>Hello</span>
-       </div>
-     </xmp>
-    </pre>
-  <!--  example 3 -->
-  <!--  example 4 -->
-   <div class="content row">
-    <a href="" name="Example1"></a>
-    <div class="sector span6">
-     <input type="radio" id="choicemode4" value="choicemode4" name="choicemode4">
-     <lable for="choicemode4">alfa</lable>
-     <input type="radio" id="choicemode4a"  name="choicemode4">
-     <lable for="choicemode4a">beta</lable>
-    </div>
-    <div class="goal span6" data-response="choicemode4" data-response-where="choicemode4" data-response-hide ><span>Hello</span></div>
+   <div class="code">
+    <pre data-response-hide data-response="button2" data-response-effect="slide"><code class="html nohighlight">    &#60;input type="text" id="choicemode2"&#62;
+    &#60;label for="choicemode2">click on me&#60;/label&#62;
+    &#60;div class="goal span6" data-response="choicemode2" data-response-hide data-respons-realtime>Hello&#60;/div&#62;</code></pre>
    </div>
-    <pre>
-     <xmp>
-       <input type="number" id="meta_choicemode4" data-response-realtime>
-       <div class="goal span6" data-response="choicemode4" data-response-hide ><span>Hello</span>
-       </div>
-     </xmp>
-    </pre>
-  <!--  example 4 -->
-  <!--  example 5 -->
-   <div class="content row">
-    <a href="" name="Example5"></a>
-    <div class="sector span6">
-     <input type="radio" id="choicemode4" value="choicemode4" name="choicemode4">
-     <lable for="choicemode4">alfa</lable>
-     <input type="radio" id="choicemode4a" value="choicemode4a"  name="choicemode4">
-     <lable for="choicemode4a">beta</lable>
-    </div>
-    <div class="goal span3" data-response="choicemode4" data-response-where="choicemode4" data-response-hide ><span>Hello</span></div>
-    <div class="goal span3" data-response="choicemode4a"  data-response-where="choicemode4a" data-response-hide ><span>Hello</span></div>
-   </div>
-    <pre>
-     <xmp>
-       <input type="number" id="meta_choicemode4" data-response-realtime>
-       <div class="goal span6" data-response="choicemode4" data-response-hide ><span>Hello</span>
-       </div>
-     </xmp>
-    </pre>
-  <!--  example 5 -->
+  </div>
+  <!--  example 1 -->
  </div>
 </div>
   <script src="prism.js"></script>
