@@ -19,8 +19,8 @@
   <ul>
    <li><a href="#example1"  id="example1"  >check box</a></li>
    <li><a href="#example2"  id="example2"  >input text</a></li>
-   <li><a href="#Example4"  id="example4"  >radio</a></li>
-   <li><a href="#example3"  id="example3"  >input number</a></li>
+   <li><a href="#Example4"  id="example3"  >radio</a></li>
+   <li><a href="#example3"  id="example4"  >input number</a></li>
    <li><a href="#Example5"  id="example5"  >timing[slow]</a></li>
    <li><a href="#Example6"  id="example6"  >timing[fast]</a></li>
    <li><a href="#Example7"  id="example7"  >effect[slider]</a></li>
@@ -46,12 +46,12 @@
  <!--  example 1 -->
   <a href="#example1" id="example1"></a>
   <h3>checkbox</h3>
-  <div class="Example">
+  <div class="Example1">
    <div class="sector row">
     <div class="request span7">
      <p>How to show/hide an element on checkbox checked</p>
      <input type="checkbox" value="" id="button1">
-     <label for="button1" id="button">
+     <label for="button1" class="button_label">
      <span class="btn btn-3 btn-3e">codes</span>
      </label>
     </div>
@@ -60,7 +60,7 @@
       <div class="goal span6"><span data-response="meta_choicemode1" data-response-hide >Hello</span></div>
       <div class="span6">
         <span class="check">
-         <input type="checkbox" id="choicemode1" value="multi">
+         <input type="checkbox" id="choicemode1" value="">
          <label for="choicemode1"></label>
          <label for="choicemode1">check me</label>
         </span>
@@ -83,7 +83,7 @@
     <div class="request span7">
      <p>How to show/hide an element on input keyup</p>
      <input type="checkbox" value="" id="button2">
-     <label for="button2" id="button">
+     <label for="button2" class="button_label">
      <span class="btn btn-3 btn-3e">codes</span>
      </label>
     </div>
@@ -114,8 +114,8 @@
    <div class="sector row">
     <div class="request span7">
      <p>How to show/hide an element on radio check</p>
-     <input type="checkbox" value="" id="button2">
-     <label for="button2" id="button">
+     <input type="checkbox" value="" id="button3">
+     <label for="button3" class="button_label">
      <span class="btn btn-3 btn-3e">codes</span>
      </label>
     </div>
@@ -135,7 +135,7 @@
     </div>
    </div>
    <div class="code">
-    <pre data-response-hide data-response="button2" data-response-effect="slide"><code class="html nohighlight">    &#60;input type="radio" id="one" value="one" name="choice3"&#62;
+    <pre data-response-hide data-response="button3" data-response-effect="slide"><code class="html nohighlight">    &#60;input type="radio" id="one" value="one" name="choice3"&#62;
     &#60;label for="one">one&#60;/label&#62;
     &#60;input type="radio" id="two" value="two" name="choice3"&#62;
     &#60;label for="two">two&#60;/label&#62;
@@ -150,8 +150,8 @@
    <div class="sector row">
     <div class="request span7">
      <p>How to show/hide an element on number input</p>
-     <input type="checkbox" value="" id="button2">
-     <label for="button2" id="button4">
+     <input type="checkbox" value="" id="button4">
+     <label for="button4" id="button4">
      <span class="btn btn-3 btn-3e">codes</span>
      </label>
     </div>
@@ -174,7 +174,39 @@
     &#60;div class="goal span6" data-response="choicemode4" data-response-hide data-respons-realtime>Hello&#60;/div&#62;</code></pre>
    </div>
   </div>
- <!--  example 2 -->
+ <!--  example 4 -->
+ <!--  example 5 -->
+  <a href="#example5" id="example5"></a>
+  <h3>checkbox fast</h3>
+  <div class="Example">
+   <div class="sector row">
+    <div class="request span7">
+     <p>How to show/hide an element fast on checkbox checked </p>
+     <input type="checkbox" value="" id="button5">
+     <label for="button5" class="button_label">
+     <span class="btn btn-3 btn-3e">codes</span>
+     </label>
+    </div>
+    <div class="replace_box span5">
+     <div class="row">
+      <div class="goal span6"><span data-response="meta_choicemode5" data-response-hide data-response-timing="fast" >Hello</span></div>
+      <div class="span6">
+        <span class="check">
+         <input type="checkbox" id="choicemode5" value="">
+         <label for="choicemode5"></label>
+         <label for="choicemode5">check me</label>
+        </span>
+       </div>
+     </div>
+    </div>
+   </div>
+   <div class="code">
+    <pre data-response-hide data-response="button5" data-response-effect="slide"><code class="html nohighlight">    &#60;input type="checkbox" id="meta_choicemode3"&#62;
+    &#60;label for="meta_choicemode5">click on me&#60;/label&#62;
+    &#60;div class="goal span6" data-response="meta_choicemode5" data-response-hide data-response-timing="fast">Hello&#60;/div&#62;</code></pre>
+   </div>
+  </div>
+ <!--  example 5 -->
  </div>
 </div>
   <script src="prism.js"></script>

@@ -24,6 +24,8 @@ code{background: rgba(220, 215, 215, 0.27);width: 100%;margin: 0em auto;display:
 .replace_box{min-height: 125px;width: 100%;display: block;background-color: rgba(247, 247, 247, 0.66);position: relative;}
 .replace_box div{display: flex;align-items: center;min-height: 125px;}
 .request p{margin: 0;padding: 1em;text-align: left;}
+.request input[type="checkbox"]{display: none;}
+
 /*checkbox*/
 .check{width: 100%;display: inline-block;margin:0 1em;cursor: pointer;}
 .check input[type="text"],.check input[type="number"]{border: 1px solid #429cae;}
@@ -56,9 +58,6 @@ span p{font-size: 1.6em;margin:1em 0;}
 .btn-3:active {background: #216877;}
 .btn-3:before {position: absolute;height: 100%;left: 0;top: 0;line-height: 3;font-size: 140%;width: 60px;}
 .hljs{overflow-x:auto;padding:0.5em;color:#383a42;}.hljs-comment,.hljs-quote{color:#a0a1a7;font-style:italic}.hljs-doctag,.hljs-keyword,.hljs-formula{color:#a626a4}.hljs-section,.hljs-name,.hljs-selector-tag,.hljs-deletion,.hljs-subst{color:#e45649}.hljs-literal{color:#0184bb}.hljs-string,.hljs-regexp,.hljs-addition,.hljs-attribute,.hljs-meta-string{color:#50a14f}.hljs-built_in,.hljs-class .hljs-title{color:#c18401}.hljs-attr,.hljs-variable,.hljs-template-variable,.hljs-type,.hljs-selector-class,.hljs-selector-attr,.hljs-selector-pseudo,.hljs-number{color:#986801}.hljs-symbol,.hljs-bullet,.hljs-link,.hljs-meta,.hljs-selector-id,.hljs-title{color:#4078f2}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:bold}.hljs-link{text-decoration:underline}
-#button1{display: none;}
-#button2{display: none;}
-#button{width: 100%;}
 
 
 
