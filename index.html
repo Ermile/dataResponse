@@ -30,7 +30,7 @@
    <li><a href="#Example11" id="example11" >call</a></li>
    <li><a href="#Example11" id="example11" >class</a></li>
    <li><a href="#Example11" id="example11" >class false</a></li>
-   <li><a href="#Example11" id="example11" >reapet</a></li>s
+   <li><a href="#Example11" id="example11" >reapet</a></li>
   </ul>
  </div>
  <div class="span10 main">
@@ -113,7 +113,7 @@
   <div class="Example">
    <div class="sector row">
     <div class="request span7">
-     <p>How to show/hide an element on radio chech</p>
+     <p>How to show/hide an element on radio check</p>
      <input type="checkbox" value="" id="button2">
      <label for="button2" id="button">
      <span class="btn btn-3 btn-3e">codes</span>
@@ -121,14 +121,13 @@
     </div>
     <div class="replace_box span5">
      <div class="row">
-      <div class="goal span6"><span data-response="choicemode3" data-respons-hide data-response-where="choicemode3">Hello</span></div>
+      <div class="goal span6"><span data-response="one|two" data-response-where="one">Hello</span></div>
       <div class="span6">
         <span class="check">
-         <input type="radio" id="choicemode3" value="choicemode3" name="choice3">
-         <label for="choicemode3">alfa</label>
-         <input type="radio" id="choicemode3a" name="choice3">
-         <label for="choicemode3a">alfa</label>
-
+         <input type="radio" id="one" value="one" name="choice3">
+         <label for="one">one</label>
+         <input type="radio" id="two"  name="choice3">
+         <label for="two">two</label>
          <!-- <label for="choicemode2">check me</label> -->
         </span>
        </div>
@@ -136,9 +135,11 @@
     </div>
    </div>
    <div class="code">
-    <pre data-response-hide data-response="button2" data-response-effect="slide"><code class="html nohighlight">    &#60;input type="text" id="choicemode2"&#62;
-    &#60;label for="choicemode2">click on me&#60;/label&#62;
-    &#60;div class="goal span6" data-response="choicemode2" data-response-hide data-respons-realtime>Hello&#60;/div&#62;</code></pre>
+    <pre data-response-hide data-response="button2" data-response-effect="slide"><code class="html nohighlight">    &#60;input type="radio" id="one" value="one" name="choice3"&#62;
+    &#60;label for="one">one&#60;/label&#62;
+    &#60;input type="radio" id="two" value="two" name="choice3"&#62;
+    &#60;label for="two">two&#60;/label&#62;
+    &#60;div class="goal span6" data-response="one|two"  data-respons-where="two">Hello&#60;/div&#62;</code></pre>
    </div>
   </div>
  <!--  example 3 -->

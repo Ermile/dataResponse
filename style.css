@@ -37,6 +37,8 @@ label:before{width: 10px;height: 2px;background-color: #00667a;border: 1px #0066
 label:after{opacity: 0;width: 20px;height: 2px;background-color: #00667a;border: 1px #00667a solid;transform: rotate(-50deg);content:"";position: absolute;border-radius: 4px;top: 3px;left: 5px;font-size: 1.5em;font-weight: bolder;transition: .3s;}
 /*input*/
 input[type="text"]{display: inline-block;border: 1px solid #eee;padding: 1em;outline: 0;}
+input[type="radio"]{display: inline-block;vertical-align: middle;width: 20px;height: 20px;}
+input[type="radio"]+label{padding:.5em;display:inline-block;vertical-align: middle;color: #2d91a5;font-size: 1.5em;}
 input:focuse{border: 1px solid red;}
 span p{font-size: 1.6em;margin:1em 0;}
 .E6 span{padding: .5em 1em;}
