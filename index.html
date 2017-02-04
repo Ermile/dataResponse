@@ -18,9 +18,9 @@
  <div class="menu span2">
   <ul>
    <li><a href="#example1" id="example1">Simple check box</a></li>
-   <li><a href="#Example2" id="example2" >check box on slow effect</a></li>
-<!--    <li><a href="#Example2" >Example2:simple check box very fast</a></li>
-   <li><a href="#Example3" >Example3:simple check box in slide show</a></li>
+   <li><a href="#example2" id="example2" >input type text</a></li>
+   <li><a href="#example3" id="example3" >radio</a></li>
+<!--    <li><a href="#Example3" >Example3:simple check box in slide show</a></li>
    <li><a href="#Example4" >Example4 select and option</a></li>
    <li><a href="#Example5" >Example5 on keyup</a></li>
    <li><a href="#Example6" >Example6 like 7 slider</a></li>
@@ -40,7 +40,7 @@
   <pre><code class="javascript">  &#60;script type="text/javascript" src="respons.js"&#62;&#60;/script&#62;
   &#60;script src="jquery-3.1.1.min.js"&#62;&#60;/script&#62;</code></pre>
  </div>
-  <!--  example 1 -->
+ <!--  example 1 -->
   <a href="#example1" id="example1"></a>
   <h3>checkbox</h3>
   <div class="Example">
@@ -71,8 +71,8 @@
     &#60;div class="goal span6" data-response="meta_choicemode3" data-response-hide>Hello&#60;/div&#62;</code></pre>
    </div>
   </div>
-  <!--  example 1 -->
-  <!--  example 2 -->
+ <!--  example 1 -->
+ <!--  example 2 -->
   <a href="#example2" id="example2"></a>
   <h3>input</h3>
   <div class="Example">
@@ -103,7 +103,42 @@
     &#60;div class="goal span6" data-response="choicemode2" data-response-hide data-respons-realtime>Hello&#60;/div&#62;</code></pre>
    </div>
   </div>
-  <!--  example 1 -->
+ <!--  example 2 -->
+ <!--  example 3-->
+  <a href="#example3" id="example3"></a>
+  <h3>radio</h3>
+  <div class="Example">
+   <div class="sector row">
+    <div class="request span7">
+     <p>How to show/hide an element on radio chech</p>
+     <input type="checkbox" value="" id="button2">
+     <label for="button2" id="button">
+     <span class="btn btn-3 btn-3e">codes</span>
+     </label>
+    </div>
+    <div class="replace_box span5">
+     <div class="row">
+      <div class="goal span6"><span data-response="choicemode2" data-respons-hide data-response-where="choicemode3">Hello</span></div>
+      <div class="span6">
+        <span class="check">
+         <input type="radio" id="choicemode3" value="choicemode3" name="choice3">
+         <label for="choicemode3">alfa</label>
+         <input type="radio" id="choicemode3a" name="choice3">
+         <label for="choicemode3a">alfa</label>
+
+         <!-- <label for="choicemode2">check me</label> -->
+        </span>
+       </div>
+     </div>
+    </div>
+   </div>
+   <div class="code">
+    <pre data-response-hide data-response="button2" data-response-effect="slide"><code class="html nohighlight">    &#60;input type="text" id="choicemode2"&#62;
+    &#60;label for="choicemode2">click on me&#60;/label&#62;
+    &#60;div class="goal span6" data-response="choicemode2" data-response-hide data-respons-realtime>Hello&#60;/div&#62;</code></pre>
+   </div>
+  </div>
+ <!--  example 3 -->
  </div>
 </div>
   <script src="prism.js"></script>

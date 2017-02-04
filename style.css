@@ -1,4 +1,4 @@
-body{font-family: IRANSansweb;}
+/*body{font-family: IRANSans;}*/
 body[data-response-hide]{display:none;}
 h1{border-bottom: 1px solid #eee;text-align: left;font-weight: 600;}
 h3{color: #2d91a5;font-weight: bolder; margin:0;padding:0 .6em;text-align: left;margin-top: 3em;}
@@ -26,6 +26,7 @@ code{background: rgba(220, 215, 215, 0.27);width: 100%;margin: 0em auto;display:
 .request p{margin: 0;padding: 1em;text-align: left;}
 /*checkbox*/
 .check{width: 100%;display: inline-block;margin:0 1em;cursor: pointer;}
+.check input[type="text"]{border: 1px solid #429cae;}
 .check input[type="checkbox"]{width: 0}
 .check input[type="checkbox"]+label{width: 20px;height: 21px;position: relative;display: inline-block;border: #eee solid 2px;border-radius: 4px;vertical-align: middle;margin: 0 .4em;}
 .check input[type="checkbox"]:checked+label::before,.check input[type="checkbox"]:checked+label::after{opacity: 1;}
@@ -37,9 +38,6 @@ label:after{opacity: 0;width: 20px;height: 2px;background-color: #00667a;border:
 /*input*/
 input[type="text"]{display: inline-block;border: 1px solid #eee;padding: 1em;outline: 0;}
 input:focuse{border: 1px solid red;}
-/*.check input[type="text"]::cheng{border: 1px solid red;}*/
-/*..check input[type = "text"]{width: 200px;border-radius: 5px;padding: 1em;}*/
-
 span p{font-size: 1.6em;margin:1em 0;}
 .E6 span{padding: .5em 1em;}
 /*button*/
