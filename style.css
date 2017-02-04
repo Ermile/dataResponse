@@ -26,7 +26,7 @@ code{background: rgba(220, 215, 215, 0.27);width: 100%;margin: 0em auto;display:
 .request p{margin: 0;padding: 1em;text-align: left;}
 /*checkbox*/
 .check{width: 100%;display: inline-block;margin:0 1em;cursor: pointer;}
-.check input[type="text"]{border: 1px solid #429cae;}
+.check input[type="text"],.check input[type="number"]{border: 1px solid #429cae;}
 .check input[type="checkbox"]{width: 0}
 .check input[type="checkbox"]+label{width: 20px;height: 21px;position: relative;display: inline-block;border: #eee solid 2px;border-radius: 4px;vertical-align: middle;margin: 0 .4em;}
 .check input[type="checkbox"]:checked+label::before,.check input[type="checkbox"]:checked+label::after{opacity: 1;}
@@ -36,7 +36,7 @@ label{cursor: pointer;display: inline-block;vertical-align: middle;font-size:1.3
 label:before{width: 10px;height: 2px;background-color: #00667a;border: 1px #00667a solid;transform: rotate(40deg);content:"";position: absolute;border-radius: 4px;top: 8px;left: 0px;font-size: 1.5em;font-weight: bolder;transition: .3s;opacity: 0;}
 label:after{opacity: 0;width: 20px;height: 2px;background-color: #00667a;border: 1px #00667a solid;transform: rotate(-50deg);content:"";position: absolute;border-radius: 4px;top: 3px;left: 5px;font-size: 1.5em;font-weight: bolder;transition: .3s;}
 /*input*/
-input[type="text"]{display: inline-block;border: 1px solid #eee;padding: 1em;outline: 0;}
+input[type="text"],input[type="number"]{display: inline-block;border: 1px solid #eee;padding: 1em;outline: 0;}
 input[type="radio"]{display: inline-block;vertical-align: middle;width: 20px;height: 20px;}
 input[type="radio"]+label{padding:.5em;display:inline-block;vertical-align: middle;color: #2d91a5;font-size: 1.5em;}
 input:focuse{border: 1px solid red;}
