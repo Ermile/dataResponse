@@ -19,18 +19,19 @@
   <ul>
    <li><a href="#example1"  id="example1"  >check box</a></li>
    <li><a href="#example2"  id="example2"  >input text</a></li>
-   <li><a href="#Example4"  id="example3"  >radio</a></li>
+   <li><a href="#Example4"  id="example3"  >radio where</a></li>
    <li><a href="#example3"  id="example4"  >input number</a></li>
    <li><a href="#Example5"  id="example5"  >timing[fast]</a></li>
    <li><a href="#Example6"  id="example6"  >timing[slow]</a></li>
    <li><a href="#Example7"  id="example7"  >effect[slider]</a></li>
    <li><a href="#Example8"  id="example8"  >where not</a></li>
-   <li><a href="#Example9"  id="example9"  >toggel</a></li>
-   <li><a href="#Example10" id="example10" >disable</a></li>
+   <!-- <li><a href="#Example9"  id="example9"  >toggel</a></li> -->
+   <li><a href="#Example9"  id="example9" >disable</a></li>
+   <li><a href="#Example10" id="example10" >tow step</a></li>
    <li><a href="#Example11" id="example11" >call</a></li>
-   <li><a href="#Example11" id="example11" >class</a></li>
-   <li><a href="#Example11" id="example11" >class false</a></li>
-   <li><a href="#Example11" id="example11" >reapet</a></li>
+   <li><a href="#Example12" id="example12" >class</a></li>
+   <li><a href="#Example13" id="example13" >class false</a></li>
+   <li><a href="#Example14" id="example14" >reapet</a></li>
   </ul>
  </div>
  <div class="span10 main">
@@ -273,11 +274,11 @@
  <!--  example 7 -->
  <!--  example 8-->
   <a href="#example8" id="example8"></a>
-  <h3>where not</h3>
+  <h3>disable</h3>
   <div class="Example">
    <div class="sector row">
     <div class="request span7">
-     <p>How to show/hide an element on radio check</p>
+     <p>How to <b>disable</b> checkbox </p>
      <input type="checkbox" value="" id="button8">
      <label for="button8" class="button_label">
      <span class="btn btn-3 btn-3e">codes</span>
@@ -285,28 +286,61 @@
     </div>
     <div class="replace_box span5">
      <div class="row">
-      <div class="goal span6"><span data-response="one|two" data-response-where="one" data-response-hide>Hello</span></div>
+      <div class="goal span6"><span data-response-disable>Hello</span></div>
+      <div class="span6">
+       <span class="check">
+        <input type="checkbox" id="choicemode8" value="">
+        <label for="choicemode8"></label>
+        <label for="choicemode8">check me</label>
+       </span>
+       </div>
+     </div>
+    </div>
+   </div>
+   <div class="code">
+    <pre data-response-hide data-response="button8" data-response-effect="slide"><code class="html nohighlight">    &#60;input type="checkbox" id="choicemode8"&#62;
+    &#60;label for="choicemode8">click on me&#60;/label&#62;
+    &#60;div class="goal span6" data-response="choicemode8" data-response-disable>Hello&#60;/div&#62;</code></pre>
+   </div>
+  </div>
+ <!--  example 8 -->
+ <!--  example 9 -->
+  <a href="#example9" id="example9"></a>
+  <h3>two step</h3>
+  <div class="Example9">
+   <div class="sector row">
+    <div class="request span7">
+     <p>How to show/hide an  chechbox on check checkbox</p>
+     <input type="checkbox" value="" id="button9">
+     <label for="button1" class="button_label">
+      <span class="btn btn-3 btn-3e">codes</span>
+     </label>
+    </div>
+    <div class="replace_box span5">
+     <div class="row">
+      <!-- <div class="goal span6"><span data-response="choicemode9" data-response-hide>Hello</span></div> -->
+      <span class="check step9" data-response="choicemode9" data-response-hide>
+       <input type="checkbox" id="9pluse">
+       <label for="9pluse"></label>
+       <label for="9pluse">step2</label>
+      </span>
       <div class="span6">
         <span class="check">
-         <input type="radio" id="one" value="one" name="choice8">
-         <label for="one">one</label>
-         <input type="radio" id="two"  name="choice8">
-         <label for="two">two</label>
-         <!-- <label for="choicemode2">check me</label> -->
+         <input type="checkbox" id="choicemode9" value="">
+         <label for="choicemode9"></label>
+         <label for="choicemode9">check me</label>
         </span>
        </div>
      </div>
     </div>
    </div>
    <div class="code">
-    <pre data-response-hide data-response="button8" data-response-effect="slide"><code class="html nohighlight">    &#60;input type="radio" id="one" value="one" name="choice8"&#62;
-    &#60;label for="one">one&#60;/label&#62;
-    &#60;input type="radio" id="two" value="two" name="choice8"&#62;
-    &#60;label for="two">two&#60;/label&#62;
-    &#60;div class="goal span6" data-response="one|two"  data-respons-where="two">Hello&#60;/div&#62;</code></pre>
+    <pre data-response-hide data-response="button9" data-response-effect="slide"><code class="html nohighlight">    &#60;input type="checkbox" id="choicemode9"&#62;
+    &#60;label for="choicemode9">click on me&#60;/label&#62;
+    &#60;div class="goal span6" data-response="choicemode9" data-response-hide>Hello&#60;/div&#62;</code></pre>
    </div>
   </div>
- <!--  example 8 -->
+ <!--  example 9 -->
  </div>
 </div>
   <script src="prism.js"></script>
