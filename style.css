@@ -1,5 +1,5 @@
 /*body{font-family: IRANSans;}*/
-body[data-response-hide]{display:none;}
+[data-response-hide]{display: none !important;}
 h1{border-bottom: 1px solid #eee;text-align: left;font-weight: 600;}
 h3{color: #2d91a5;font-weight: bolder; margin:0;padding:0 .6em;text-align: left;margin-top: 3em;}
 .box .menu{margin: 4em 0;}

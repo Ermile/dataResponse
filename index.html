@@ -89,7 +89,7 @@
     </div>
     <div class="replace_box span5">
      <div class="row">
-      <div class="goal span6"><span data-response="choicemode2" data-respons-hide data-respons-realtime >Hello</span></div>
+      <div class="goal span6"><span data-response="choicemode2" data-response-hide data-respons-realtime >Hello</span></div>
       <div class="span6">
         <span class="check">
          <input type="text" id="choicemode2" value="">
@@ -121,7 +121,7 @@
     </div>
     <div class="replace_box span5">
      <div class="row">
-      <div class="goal span6"><span data-response="one|two" data-response-where="one">Hello</span></div>
+      <div class="goal span6"><span data-response="one|two" data-response-hide data-response-where="one">Hello</span></div>
       <div class="span6">
         <span class="check">
          <input type="radio" id="one" value="one" name="choice3">
@@ -157,7 +157,7 @@
     </div>
     <div class="replace_box span5">
      <div class="row">
-      <div class="goal span6"><span data-response="choicemode4" data-respons-hide data-respons-realtime >Hello</span></div>
+      <div class="goal span6"><span data-response="choicemode4" data-respons-realtime data-response-hide>Hello</span></div>
       <div class="span6">
         <span class="check">
          <input type="number" id="choicemode4" value="" placeholder="inter the number">
@@ -271,6 +271,42 @@
    </div>
   </div>
  <!--  example 7 -->
+ <!--  example 8-->
+  <a href="#example8" id="example8"></a>
+  <h3>where not</h3>
+  <div class="Example">
+   <div class="sector row">
+    <div class="request span7">
+     <p>How to show/hide an element on radio check</p>
+     <input type="checkbox" value="" id="button8">
+     <label for="button8" class="button_label">
+     <span class="btn btn-3 btn-3e">codes</span>
+     </label>
+    </div>
+    <div class="replace_box span5">
+     <div class="row">
+      <div class="goal span6"><span data-response="one|two" data-response-where="one" data-response-hide>Hello</span></div>
+      <div class="span6">
+        <span class="check">
+         <input type="radio" id="one" value="one" name="choice8">
+         <label for="one">one</label>
+         <input type="radio" id="two"  name="choice8">
+         <label for="two">two</label>
+         <!-- <label for="choicemode2">check me</label> -->
+        </span>
+       </div>
+     </div>
+    </div>
+   </div>
+   <div class="code">
+    <pre data-response-hide data-response="button8" data-response-effect="slide"><code class="html nohighlight">    &#60;input type="radio" id="one" value="one" name="choice8"&#62;
+    &#60;label for="one">one&#60;/label&#62;
+    &#60;input type="radio" id="two" value="two" name="choice8"&#62;
+    &#60;label for="two">two&#60;/label&#62;
+    &#60;div class="goal span6" data-response="one|two"  data-respons-where="two">Hello&#60;/div&#62;</code></pre>
+   </div>
+  </div>
+ <!--  example 8 -->
  </div>
 </div>
   <script src="prism.js"></script>
