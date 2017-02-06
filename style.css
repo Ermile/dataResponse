@@ -2,8 +2,10 @@
 [data-response-hide]{display: none !important;}
 h1{border-bottom: 1px solid #eee;text-align: left;font-weight: 600;}
 h3{color: #2d91a5;font-weight: bolder; margin:0;padding:0 .6em;text-align: left;margin-top: 3em;}
-.box .menu{margin: 4em 0;}
-.menu li{display: block;text-align: right;padding: 1em;font-size: 1.2em;color: #2d91a5;border-bottom: 1px solid #246673;}
+.box .menu{margin:4em 0;background: #f4f4f4;}
+.menu li{display: block;text-align: left;padding: .5em;font-size: 1.2em;color: #2d91a5;margin-left:.5em;transition: .2s }
+.menu li a{color: #6b6161;font-size: 1.1em;font-weight: 400;width: 100%;display: block;float: left;padding: .4em;}
+.menu li:hover a{color: #403b3b;font-weight: 500;}
 pre{font-size: 1.8em;background-color: transparent;padding:0;font-size: 1.8em;background-color: transparent;margin: 0 auto;max-width: 100%;}
 code{background: rgba(220, 215, 215, 0.27);width: 100%;margin: 0em auto;display:block;}
 #dscription p{margin-bottom: 0;text-align:left;}
@@ -23,11 +25,11 @@ code{background: rgba(220, 215, 215, 0.27);width: 100%;margin: 0em auto;display:
 /*replace_box*/
 .replace_box{min-height: 125px;width: 100%;display: block;background-color: rgba(247, 247, 247, 0.66);position: relative;}
 .replace_box div{display: flex;align-items: center;min-height: 125px;}
+.request{text-align: left;}
 .request p{margin: 0;padding: 1em;text-align: left;}
 .request input[type="checkbox"]{display: none;}
-
 /*checkbox*/
-.check{width: 100%;display: inline-block;margin:0 1em;cursor: pointer;}
+.check{width: 100%;display: inline-block;margin:0 1em;cursor: pointer;text-align: left;}
 .check input[type="text"],.check input[type="number"]{border: 1px solid #429cae;}
 .check input[type="checkbox"]{width: 0}
 .check input[type="checkbox"]+label{width: 20px;height: 21px;position: relative;display: inline-block;border: #eee solid 2px;border-radius: 4px;vertical-align: middle;margin: 0 .4em;}
@@ -45,18 +47,10 @@ input:focuse{border: 1px solid red;}
 span p{font-size: 1.6em;margin:1em 0;}
 .E6 span{padding: .5em 1em;}
 /*button*/
-.btn {width: 30%;font-size: .8em;text-align: center;border: none;cursor: pointer;text-transform: uppercase;letter-spacing: 1px;font-weight: 700;position: relative;}
-.btn:after {content: '';position: absolute;z-index: -1;-webkit-transition: all 0.3s;-moz-transition: all 0.3s;transition: all 0.3s;}
-/* Button 3e */
-.btn-3e {padding:15px 110px 15px 85px;overflow: hidden;}
-.btn-3e:before {left: auto;right: 10px;z-index: 2;}
-.btn-3e:after {width: 30%;height: 200%;background: rgba(255,255,255,0.1);z-index: 1;right: 0;top: 0;margin: -5px 0 0 -5px;-webkit-transform-origin: 0 0;-webkit-transform: rotate(-20deg);-moz-transform-origin: 0 0;-moz-transform: rotate(-20deg);-ms-transform-origin: 0 0;-ms-transform: rotate(-20deg);transform-origin: 0 0;transform: rotate(-20deg);}
-.btn-3e:hover:after {width: 40%;}
-/* Button 3 */
-.btn-3 {background: #2d91a5;color: #fff;margin: 0 auto;display: block;margin-top: 2em;float: right;}
-.btn-3:hover {background: #277e90;}
-.btn-3:active {background: #216877;}
-.btn-3:before {position: absolute;height: 100%;left: 0;top: 0;line-height: 3;font-size: 140%;width: 60px;}
+.btn {width: 100%;font-size: 1.3em;text-align: center;cursor: pointer;font-weight: 500;border-radius: 50%;margin: 2em 0 0px 1em;display: block;color: #429cae;}
+.btn:hover {color: #277e90;}
+.btn:active {color: #216877;}
+/*high light*/
 .hljs{overflow-x:auto;padding:0.5em;color:#383a42;}.hljs-comment,.hljs-quote{color:#a0a1a7;font-style:italic}.hljs-doctag,.hljs-keyword,.hljs-formula{color:#a626a4}.hljs-section,.hljs-name,.hljs-selector-tag,.hljs-deletion,.hljs-subst{color:#e45649}.hljs-literal{color:#0184bb}.hljs-string,.hljs-regexp,.hljs-addition,.hljs-attribute,.hljs-meta-string{color:#50a14f}.hljs-built_in,.hljs-class .hljs-title{color:#c18401}.hljs-attr,.hljs-variable,.hljs-template-variable,.hljs-type,.hljs-selector-class,.hljs-selector-attr,.hljs-selector-pseudo,.hljs-number{color:#986801}.hljs-symbol,.hljs-bullet,.hljs-link,.hljs-meta,.hljs-selector-id,.hljs-title{color:#4078f2}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:bold}.hljs-link{text-decoration:underline}
 
 
